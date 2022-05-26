@@ -1,0 +1,24 @@
+<div class="col-md-4 offset-md-4">
+    <div class="card">
+        <div class="card-body">
+            <form >
+                <h4 class="d-flex justify-content-center mb-3">Bitacora</h4>
+                <div class="form-group">
+                    <input type="text" name="duracionactividad" [(ngModel)]="bitacora.duracionactividad" placeholder="Duracion" class="form-control" autofocus >
+                </div>
+                <div class="form-group my-3">
+                    <textarea name="descripcionbitacora" [(ngModel)]="bitacora.descripcionbitacora" placeholder="Descripcion"  rows="2" class="form-control"></textarea>
+                </div>
+                <div class="form-group my-3">
+                    <input type="text" name="encompaniade" [(ngModel)]="bitacora.encompaniade" placeholder="Acompañado de" class="form-control" autofocus >
+                </div>
+                <div class="form-group my-3">
+                    <input type="text" name="actividadcorrespondea" [(ngModel)]="bitacora.actividadcorrespondea" placeholder="Actividad" class="form-control" autofocus >
+                </div>
+                <button class="form-control btn btn-success btn-block " (click)="saveNewBitacora()">
+                    Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

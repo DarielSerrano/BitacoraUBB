@@ -1,0 +1,32 @@
+
+<table class="table col-md">
+    <thead>
+      <tr>
+        <th scope="col">Fecha</th>
+        <th scope="col">Duracion</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Acompañado de</th>
+        <th scope="col">Actividad</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider" >
+      <tr *ngFor="let bitacora of bitacoras">
+        <th scope="row">{{bitacora.created_at | date: 'dd-MM-yyyy'}}</th>
+        <td>{{bitacora.duracionactividad}}</td>
+        <td>{{bitacora.descripcionbitacora}}</td>
+        <td>{{bitacora.encompaniade}}</td>
+        <td>{{bitacora.actividadcorrespondea}}</td>
+        <div class="d-flex justify-contentbetweeen align-items-center">
+          <a [routerLink]="['/bitacoras/edit', bitacora.idbitacora]" class="btn btn-info btn-block">
+            MODIFICAR
+          </a>
+          <button class="btn btn-danger" (click)="deleteBitacora(bitacora.idbitacora)">
+            <i class="far fa-trash-alt" ></i>
+          </button>
+        </div>
+      </tr>     
+    </tbody>
+  </table>
+  
+  

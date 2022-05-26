@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = {
+    database: {
+        host: 'mysqltrans.face.ubiobio.cl',
+        user: 'G7taller',
+        password: 'G7taller1088',
+        database: 'G7taller_bd'
+    }
+};
