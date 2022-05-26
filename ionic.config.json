@@ -1,0 +1,8 @@
+{
+  "name": "bitacoras",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "2260cbcc"
+}
