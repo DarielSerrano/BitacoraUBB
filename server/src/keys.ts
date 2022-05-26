@@ -1,0 +1,10 @@
+export default {
+
+    database: {
+        host: 'mysqltrans.face.ubiobio.cl',
+        user: 'G7taller',
+        password: 'G7taller1088',
+        database: 'G7taller_bd'
+    }
+    
+}
